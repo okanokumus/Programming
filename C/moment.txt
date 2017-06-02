@@ -1,0 +1,83 @@
+/* 30.12.2016 */
+/* to compute moment for a object*/
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
+#include <conio.h>
+
+/*	fflush(stdin); ilk deðer aldýktan sonra girdi olarak enter ý alýr ve bu da sorun yaratýr
+    scanf in aldýðý ve kaydettiði yeri boþaltýr. stdin dosyasýný silmis oluyoruz */
+
+double kutle();
+double uzaklik();
+int main(){
+	double g=9.8;
+	double kg,d;	
+
+	kg=kutle();	
+	printf("kutle = %.4lf kg\n",kg);
+    printf("\n");
+	d=uzaklik();	
+	printf("uzaklik = %.4lf m\n",d);
+    printf("\n");
+	printf("yercekimi= %.4lf m/(s^2) \n",g);
+	printf("\n");
+	printf("kuvvet = kutle * yercekimi = %.4lf Newton kadardir\n",(kg)*g);
+	printf("\n");
+	printf("moment = kuvvet * uzaklik = %.4lf Tork kadardir ",(kg)*g*d);
+getch();
+}
+
+double kutle(){
+	char unit;
+	double kg,gr;
+	printf("kutle birimi: kg icin k, gram icin g ... ");
+	scanf(" %c",&unit);
+	fflush(stdin);
+	switch (unit){
+	case 'k':
+	printf("kutleyi gir: ");
+	scanf(" %lf",&kg);
+	fflush(stdin);
+	break;
+	case 'g':
+	printf("kutleyi gir: ");
+	scanf(" %lf",&gr);
+	fflush(stdin); /* */
+	kg=gr/1000;
+	break;
+	default:
+    printf("sadece k veya g \n");
+    break;
+	}
+	return kg;
+}
+
+double uzaklik(){
+	double cm,mt;	
+	char u;
+	printf("uzaklik birimi: cm icin c, metre icin m ... ");
+	scanf(" %c",&u);
+    fflush(stdin);	
+	switch (u){
+	case 'm':
+	printf("uzakligi gir: ");
+	scanf(" %lf",&mt);
+	fflush(stdin);
+	break;
+	case 'c':
+	printf("uzakligi gir: ");
+	scanf(" %lf",&cm);
+	
+	mt=cm/100;
+	break;
+	default:
+    printf("sadece mt veya c \n");
+    break;	
+	}
+	return mt;
+}
+/*http://sharpsharp.blogcu.com/c-dili-ve-scanf-sorunu/1967218*/
+
+
+

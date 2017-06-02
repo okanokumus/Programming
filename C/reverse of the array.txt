@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <conio.h>
+void dizibas(int [],int);
+void reverse(int *);
+void swap(int *, int *);
+main(){
+	int numbers[10]={3,7,10,5,4,1,6,9,2,8};
+	printf("array: \n");
+	dizibas(numbers,10);
+	printf("reverse of the array \n");
+	reverse(numbers);
+getch();
+}
+void reverse(int *x){
+	int i,j;
+	for(i=0,j=9;i<j;i++,j--){
+		swap((x+i),(x+j));
+	}
+	dizibas(x,10);
+}
+void swap(int *a, int *b){
+	int hold = (*a);
+ 	*a=(*b);
+	 *b=hold;
+}
+
+void dizibas(int a[],int size){
+	int i;
+	for(i=0;i<10;i++){
+		printf("%2d\n",a[i]);
+	}
+	
+}

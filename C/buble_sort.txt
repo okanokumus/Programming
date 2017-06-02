@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+#include<conio.h>
+void print_array(int *,int);
+void sort(int *);
+main(){
+	int numbers[10],i;
+	srand(time(NULL));
+	for(i=0;i<10;i++){
+		*(numbers+i)=rand()%10;
+	}
+	printf("numbers : \n");
+	print_array(numbers,10);
+	printf("sorted numbers in descending order\n");
+	sort(numbers);
+	getch();
+}
+void sort(int *x){
+	int i,j,swap;
+	for(i=0;i<10;i++){
+		for(j=0;j<10-i;j++){
+			if(*(x+j)<*(x+j+1)){
+				swap=*(x+j);
+				*(x+j)=*(x+j+1);
+				*(x+j+1)=swap;
+			}
+		}
+	}
+	print_array(x,10);
+}
+void print_array(int *a,int size){
+	int i;
+	for(i=0;i<10;i++){
+		printf("%2d\n",*(a+i));
+	}
+}

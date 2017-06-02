@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <conio.h>
+void cutright(int *, int);
+main(){
+	int num, cut;
+	srand(time(NULL));
+	cut=1+rand()%4;
+	num=1000+rand()%1500;
+	printf("num is %d\n",num);
+	printf("cut is %d\n",cut);
+	cutright(&num, cut);
+	printf("%d",num);
+getch();
+}
+void cutright(int *x, int y){
+	while(y>0){
+	*x=*x/10;
+	y--;
+	}
+}

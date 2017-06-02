@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+#include<conio.h>
+
+void printarray(int *,int);
+void selectionsort(int *,int);
+
+main(){
+	
+	int i=0,numbers[10];
+	srand(time(NULL));
+	for(;i<10;i++){
+		*(numbers+i)=rand()%10;
+	}
+	printf("numbers \n");
+	printarray(numbers,10);
+	printf("numbers are sorted in descending order using selectionsort method \n");
+	selectionsort(numbers,10);
+	getch();
+}
+void selectionsort(int *a,int size){
+	
+	int i,j,imax,hold;
+	
+	for(i=0;i<size-1;i++){
+		
+		imax=i;
+		
+		for(j=i+1;j<size;j++){
+			if (a[j] > a[imax]) {
+			 imax = j;
+			 }
+		}
+		
+		if ( imax != i ) {
+ 		hold=a[i];
+ 		a[i]=a[imax];
+ 		a[imax]=hold;
+		}
+	}
+	
+	printarray(a,10);
+}
+void printarray(int *a,int size){
+	int i=0;
+	for(;i<size;i++){
+		printf("%2d\n",*(a+i));
+	}
+	
+}

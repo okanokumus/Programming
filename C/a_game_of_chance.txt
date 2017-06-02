@@ -1,0 +1,23 @@
+/* a game of chance */
+#include<stdio.h>
+#include<time.h>
+#include<stdlib.h>
+#include<math.h>
+#include<conio.h>
+int sum_dice();
+int main(void){
+	if(sum_dice()==7 || sum_dice()==11)
+	printf("you win and the sum is %d\n",sum_dice());
+	if(sum_dice()==2 || sum_dice()==3|| sum_dice()==12)
+	printf("you lose and the sum is %d\n",sum_dice());
+    getch();
+}
+	int sum_dice()
+	{
+	int first_die, second_die, sum, point;	
+	srand(time(NULL));
+	first_die= 1 + (rand() % 6 );
+	second_die= 1 + (rand() % 6 );
+	sum=first_die+second_die;
+	return sum;
+	}

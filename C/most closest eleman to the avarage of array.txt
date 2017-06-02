@@ -1,0 +1,66 @@
+/* 31.12.2016 (editted) */
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+#include<math.h>
+#include <conio.h>
+void printarray(float *const, int );
+float avarage(float *const,int );
+float findnearest(float *,float,int);
+float findmin(float *,int);
+main(){
+	int i,size=10;
+	float numbers[10]={0},ave;
+	srand(time(NULL));
+	for(i=0;i<size;i++){ // producing 10 numbers' array
+		*(numbers+i)=-500+rand()%1001;
+	}
+	printarray(numbers,size); // print the array
+	printf("avarage of the array is %.2lf\n",ave=avarage(numbers,size)); // to find avarage
+	printf("nearest number to the avarage is %.2lf\n",findnearest(numbers,ave,size));// to find nearest value of the avarage
+
+	getch();
+}
+
+float avarage(float *a,int b){
+	int i;	
+	float sum=0;
+	for(i=0;i<b;i++){
+		sum=sum + *(a+i);
+	}
+	return sum/b;
+}
+
+void printarray(float *a, int b){
+	int i;
+	for(i=0;i<b;i++){
+		printf("%2d. number is %-3.2lf\n",i+1,*(a+i));
+	}
+}
+
+float findnearest(float * const a,float b,int c){
+	int i;
+	float diff[c];
+	for(i=0;i<c;i++){
+	*(diff+i)=fabs(*(a+i) - b);	
+ }
+	for(i=0;i<c;i++){
+	if(fabs(*(a+i) - b)==findmin(diff,c)){
+		if( (*(a+i) - b)<0){
+			return b-fabs(*(a+i) - b);
+		}
+		else 
+		return b+fabs(*(a+i) - b);
+	}
+	}
+}
+float findmin(float *x,int b){ // to find the min difference avarage and alem
+	int i;
+	float min=*x;
+	for(i=0;i<b;i++){
+	if(*(x+i)<min){
+			min=*(x+i);
+	}
+	}
+	return min;
+}

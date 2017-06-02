@@ -1,0 +1,25 @@
+// to find fav. fruit
+// example of strcmp
+
+/*
+do {
+   statement(s);
+} while( condition );
+*/
+#include <stdio.h>
+#include <string.h>
+#include <conio.h>
+main(){
+       char key[]="apple";
+       char buffer[80];
+      //printf("my fav fruit %s",key);
+       do {
+           printf("guess my fav. fruit: \n");
+           fflush (stdout);
+           scanf("%79s",buffer);
+           }
+       while(strcmp(key,buffer)!=0); 
+       puts("correct answer!!!");   
+       getch();
+       return 0;
+       }

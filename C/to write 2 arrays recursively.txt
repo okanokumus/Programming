@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+#include <conio.h>
+void printarray(int *, int);
+void harmonic(int *,int *, int);
+main(){
+	int i=0,size=5,a[size],b[size],c[2*size];
+	srand(time(NULL));
+	for(;i<size;i++){
+		a[i]=rand()%21;
+		b[i]=rand()%21;
+	}
+	printf("first array  : ");
+	printarray(a,size);
+	printf("\nsecond array : ");
+	printarray(b,size);
+	printf("\nharmonic of the two array:");
+	harmonic(a,b,size);
+	getch();
+}
+void harmonic(int *x,int *y, int z){
+	int i=0;
+	for(;i<z;i++){
+		printf("%2d %2d ",*(x+i),*(y+i));
+	}
+}
+void printarray(int *x, int y){
+	int i=0;
+	for(;i<y;i++){
+	printf(" %2d",*(x+i));
+	}
+}

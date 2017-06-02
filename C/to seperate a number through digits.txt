@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+void decompose ( int * const);
+main (){
+	int num;
+	printf("enter your number : \n");
+	scanf("%d",&num);
+	int * const ptr = &num ;
+	decompose(&num);
+getch();
+}
+void decompose (int * const x){
+	int n=0,i;
+	while(*x != 0){ //find number of digits of given number
+	*x=*x / 10;
+	n++;
+}
+	printf("digit number = %d\n",n);
+	int a[n];
+	for(i=0;i<n;i++){
+	a[i]= *x % 10;
+	*x=*x /10;
+	printf("%d. digit is %d\n",i+1,a[i]);
+	}
+}

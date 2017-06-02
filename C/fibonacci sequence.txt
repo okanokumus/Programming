@@ -1,0 +1,36 @@
+// find fibonacci sequence
+
+// sum all numbers recursivly (now and before give after)
+
+#include <stdio.h>
+
+// #include <conio.h>
+
+void fib(int);
+
+void main(){
+
+	int n;
+
+	printf ("enter the final number : ");
+
+	scanf("%d",&n);
+	printf("\n");
+
+	fib(n);
+//getch();
+}
+
+void fib(int x)
+{
+	
+int a=0,b=1,hold;
+	while (a<x){
+	hold=a;	
+	a=b;	
+	b=hold+b;
+	printf("%3d\n",hold);
+	}
+}
+
+	
