@@ -1,4 +1,5 @@
 %%
+% function is proper for PCA approach
 % all image size must be the same
 % folder of the image dataset and this function must be in the same folder
 % For example : AT lab dataset contain subfolder ('at\s(1to40)')
@@ -12,7 +13,7 @@ function  images = ReadImagesFromDataset ( folder, format )
 % first input is folder name of the dataset
 % second input of the function is to take the format of the image '.xyz' 
 
-% output is n × m
+% output is n Ã— m
 % Each image is converted into a column vector and then the images are loaded 
 % into a matrix of size , where n is the number of pixels in each image 
 % and m is the total number of images.
