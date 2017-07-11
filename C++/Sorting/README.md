@@ -17,6 +17,8 @@ To compare all sorthing algoritms -> [Sorting Algorithms Animations](https://www
 
 [using C language](https://github.com/okanokumus/Programming/blob/master/C/selection_sort.txt)
 
+![](https://www.tutorialspoint.com/data_structures_algorithms/images/selection_sort.jpg)
+
 # Merge Sort ALgorithm
 
 ![](http://www.geeksforgeeks.org/wp-content/uploads/gq/2013/03/Merge-Sort.png)
