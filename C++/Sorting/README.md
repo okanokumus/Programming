@@ -12,4 +12,7 @@ To compare all sorthing algoritms -> [Sorting Algorithms Animations](https://www
 
 [using C language](https://github.com/okanokumus/Programming/blob/master/C/insertion_sort.txt)
 
-![](http://www.geeksforgeeks.org/wp-content/uploads/gq/2013/03/insertion-sort.png)
+
+# Selection Sort ALgorithm
+
+[using C language](https://github.com/okanokumus/Programming/blob/master/C/selection_sort.txt)
