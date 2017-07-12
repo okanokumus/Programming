@@ -18,7 +18,7 @@ int main() {
 	cin >> N;
 	cout << "minumum moves: " << pow(2,N) - 1 << endl;
 	printf("Moves: \n");
-	hanoi(N, 'a', 'b', 'c');	//N = 3 (no. of disks)  a, b, c are the three pegs
+	hanoi(N, 'a', 'b', 'c'); //N = number of disks
 	cin.get();
 	cin.ignore();
 	return 0;
