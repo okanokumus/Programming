@@ -1,6 +1,3 @@
-/*tower of hanoi			author: yusuf shakeel	date: 20-12-2012
-*/
-
 #include <iostream>
 #include <cmath>
 
@@ -25,8 +22,7 @@ int main() {
 	cin.get();
 	cin.ignore();
 	return 0;
-}//main() ends here
-
+}
 void hanoi(int n, char beg, char aux, char end) {
 	if (n == 1) {
 		cout<<beg<<" --> "<< end<<endl;
@@ -36,4 +32,4 @@ void hanoi(int n, char beg, char aux, char end) {
 		hanoi(1, beg, aux, end);
 		hanoi(n - 1, aux, beg, end);
 	}
-}//t() ends here
+}
