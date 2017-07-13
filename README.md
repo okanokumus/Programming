@@ -1,2 +1,2 @@
 # Programming
-some works to learn some programming languages
+some works to learn programming languages like MATLAB, Java, C, C++
