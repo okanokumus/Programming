@@ -4,3 +4,6 @@
 
 # EuclidianDistanceANDaddtion.cpp
 calculates the sum and Euclidian distance of given two coordinates using structure (VS2015)
+
+# FactorielWithRecursion.cpp
+calculates Factoriel of a given number with Recursion function
