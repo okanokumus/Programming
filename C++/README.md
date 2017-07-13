@@ -7,3 +7,6 @@ calculates the sum and Euclidian distance of given two coordinates using structu
 
 # FactorielWithRecursion.cpp
 calculates Factoriel of a given number with Recursion function
+
+# fahrenheitTOcelsius.cpp
+converts fahrenheit to celsius or vice versa. (firstly an option is emerged to choose which conversion that you made and then you enter a number which you want to convert)
