@@ -19,3 +19,6 @@ Calculates the volume of a box using given dimensions. Header file is used for t
 
 # VolumeOfBoxDirect.cpp
 Directly calculates the volume of a box using given dimensions.
+
+# Sorting
+Different Sorting Algorithms like **_Buble Sort, Merge Sort, Insertion Sort, Selection Sort_** are studied
