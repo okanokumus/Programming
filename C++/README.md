@@ -22,3 +22,12 @@ Directly calculates the volume of a box using given dimensions.
 
 # Sorting
 Different Sorting Algorithms like **_Buble Sort, Merge Sort, Insertion Sort, Selection Sort_** are studied
+
+# vectors_as_parameters.cpp	 and  what_is_vector.cpp
+what is _vector_ and how to use it.
+
+# Using termcolor.hpp
+How to use [termcolor.hpp](https://github.com/ikalnytskyi/termcolor) for colored terminal
+
+# PerfectNumber.cpp
+what is perfect number and to determine the given number is perfect number or not
