@@ -13,3 +13,9 @@ converts fahrenheit to celsius or vice versa. (firstly an option is emerged to c
 
 # File Processing
 File Handling concept in C++ language
+
+# VolumeOfBox
+Calculates the volume of a box using given dimensions. Header file is used for this calculation.
+
+# VolumeOfBoxDirect.cpp
+Directly calculates the volume of a box using given dimensions.
