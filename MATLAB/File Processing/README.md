@@ -1,0 +1,1 @@
+# ToMmakeTableANDwriteTheVarTOtheTXTfile.m	=>  result.txt
