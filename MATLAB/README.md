@@ -9,3 +9,6 @@ Camera projection matrix for calibrated stereo cameras
 
 # CreateGrayScaleRange.m
 to show grayscale range
+
+# GradMagDir.m
+it calculates the gradient magnitude and direction of a given image and plots them in the range of min and max
