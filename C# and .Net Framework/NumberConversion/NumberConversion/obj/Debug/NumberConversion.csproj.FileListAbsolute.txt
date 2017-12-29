@@ -1,0 +1,10 @@
+C:\Users\okan.okumus\source\repos\NumberConversion\NumberConversion\bin\Debug\NumberConversion.exe.config
+C:\Users\okan.okumus\source\repos\NumberConversion\NumberConversion\bin\Debug\NumberConversion.exe
+C:\Users\okan.okumus\source\repos\NumberConversion\NumberConversion\bin\Debug\NumberConversion.pdb
+C:\Users\okan.okumus\source\repos\NumberConversion\NumberConversion\obj\Debug\NumberConversion.csprojResolveAssemblyReference.cache
+C:\Users\okan.okumus\source\repos\NumberConversion\NumberConversion\obj\Debug\NumberConversion.Form1.resources
+C:\Users\okan.okumus\source\repos\NumberConversion\NumberConversion\obj\Debug\NumberConversion.Properties.Resources.resources
+C:\Users\okan.okumus\source\repos\NumberConversion\NumberConversion\obj\Debug\NumberConversion.csproj.GenerateResource.Cache
+C:\Users\okan.okumus\source\repos\NumberConversion\NumberConversion\obj\Debug\NumberConversion.csproj.CoreCompileInputs.cache
+C:\Users\okan.okumus\source\repos\NumberConversion\NumberConversion\obj\Debug\NumberConversion.exe
+C:\Users\okan.okumus\source\repos\NumberConversion\NumberConversion\obj\Debug\NumberConversion.pdb
